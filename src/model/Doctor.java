@@ -21,12 +21,13 @@ public class Doctor {
     }
 
     public int getTitleRank() {
-        if (title.indexOf("主任") >= 0) {
-            return 4;
-        }
         if (title.indexOf("副主任") >= 0) {
             return 3;
         }
+        if (title.indexOf("主任") >= 0) {
+            return 4;
+        }
+
         if (title.indexOf("主治") >= 0) {
             return 2;
         }

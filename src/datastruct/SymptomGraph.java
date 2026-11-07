@@ -1,7 +1,7 @@
 package datastruct;
 
 import java.util.ArrayList;
-
+//加权二部图
 public class SymptomGraph {
     public static class Edge {
         public String symptom;//症状
@@ -57,6 +57,10 @@ public class SymptomGraph {
 
         }
         return result;
+    }
+
+    public ArrayList<String> getAllSymptoms() {
+        return symptoms;
     }
 
     public ArrayList<Edge> getDepartmentEdges(String symptom) {

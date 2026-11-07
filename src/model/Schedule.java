@@ -18,6 +18,10 @@ public class Schedule {
         this.canceled = false;
     }
 
+    public String getKey() {
+        return doctorId + "|" + date + "|" + time.name();
+    }
+
     public int getRemaining() {
         return maxCount - booked;
     }

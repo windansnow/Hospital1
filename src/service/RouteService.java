@@ -28,7 +28,7 @@ public class RouteService {
         String text = "起点：" + from + "\n";
         Department d = data.getDepartment(doctor.getDepId());
         if(d != null){
-            text = text + "终点：" + d.getName();
+            text = text + "终点：" + d.getName()+ "\n";
         }
         text = text + "路线：";
         for(int i = 0; i < p.nodes.size(); i++){

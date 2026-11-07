@@ -22,8 +22,9 @@ public class Appointment {
     private int status = Status_Booked;
 
     public Appointment(String patientId, String patientName, String doctorId, String doctorName, String departmentName,
-                       String date, Time time){
+                       String date, Time time) {
         this.appId = "A" + counter;
+        counter ++;
         this.patientId = patientId;
         this.patientName = patientName;
         this.doctorId = doctorId;
